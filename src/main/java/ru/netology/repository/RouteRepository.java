@@ -32,8 +32,8 @@ public class RouteRepository {
         if (findById(id) == null){
             throw new NotFoundException("Element with id " + id + " not found");
         }
-        int legth = items.length - 1;
-        Route[] tmp = new Route[legth];
+        int length = items.length - 1;
+        Route[] tmp = new Route[length];
         int index = 0;
         for (Route item : items){
             if (item.getId() != id){
